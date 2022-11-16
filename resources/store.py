@@ -4,7 +4,7 @@ from flask import request
 from flask.views import MethodView
 from flask_smorest import Blueprint, abort
 
-from resources.db import stores
+from db import stores
 from schemas import StoreSchema
 
 
