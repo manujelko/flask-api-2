@@ -30,7 +30,7 @@ class StoreList(MethodView):
     def get(self):
         return StoreModel.query.all()
 
-    @blp.argument(StoreSchema)
+    @blp.arguments(StoreSchema)
     @blp.response(200, StoreSchema)
     def post(self, store_data):
         store = StoreModel(**store_data)
